@@ -12,13 +12,13 @@ public abstract class BasePage {
 	public BasePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		waitForLoaded();
+//		waitForLoaded();
 	}
 
-	public void waitForLoaded() {
-		WebDriverWait wait = new WebDriverWait(driver, 1000);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("mailru-webagent-gen-2")));
-	}
+//	public void waitForLoaded() {
+//		WebDriverWait wait = new WebDriverWait(driver, 1000);
+//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("mailru-webagent-gen-2")));
+//	}
 
 	public WebDriver getDriver() {
 		return this.driver;

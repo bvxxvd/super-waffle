@@ -12,7 +12,7 @@
 <body>
 <h1>untitled19</h1>
 <p>
-  Test duration: 497,176s
+  Test duration: 118,145s
 </p>
 
 
@@ -28,41 +28,34 @@
                   doLogin
       </td>
   <td class="duration">
-    495,316s
+    116,205s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                         WARN&nbsp;&nbsp; LoginTest#&nbsp; 23: start: navigate<br/>
+                         WARN&nbsp;&nbsp; LoginTest#&nbsp; 19: start: navigate<br/>
 <br />
                                  INFO&nbsp;&nbsp;&nbsp; BaseTest#&nbsp; 33: start, &apos;navigate;<br/>
 <br />
                                  INFO&nbsp;&nbsp;&nbsp; BaseTest#&nbsp; 35: finish, &apos;navigate;<br/>
 <br />
-                                 WARN&nbsp;&nbsp; LoginTest#&nbsp; 25: start: login<br/>
+                                 WARN&nbsp;&nbsp; LoginTest#&nbsp; 21: start: login<br/>
 <br />
-                                 INFO&nbsp;&nbsp; LoginTest#&nbsp; 26: enter: tathtp@mail.ru&nbsp; Klopik123<br/>
+                                 INFO&nbsp;&nbsp; LoginTest#&nbsp; 22: enter: daniel_defo@internet.ru&nbsp; iiYiYyoPM31;<br/>
+<br />
+                                 INFO&nbsp;&nbsp; LoginTest#&nbsp; 29: send Email;<br/>
 <br />
                   </div>
     
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException: Cannot invoke &quot;java.util.List.iterator()&quot; because &quot;allElements&quot; is null</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException: Cannot invoke &quot;Object.getClass()&quot; because &quot;obj&quot; is null</b></a><br />
     <div class="stackTrace" id="exception-0">
-              org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:446)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElementsById(RemoteWebDriver.java:457)<br />
-              org.openqa.selenium.By$ById.findElements(By.java:210)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)<br />
-              org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)<br />
-              org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)<br />
-              org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)<br />
-              org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)<br />
-              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)<br />
-              by.htp.pageobject.BasePage.waitForLoaded(BasePage.java:20)<br />
-              by.htp.pageobject.BasePage.&lt;init&gt;(BasePage.java:15)<br />
-              by.htp.pageobject.MailBoxPage.&lt;init&gt;(MailBoxPage.java:14)<br />
-              by.htp.pageobject.MainPage.login(MainPage.java:34)<br />
-              by.htp.mailru_outbox.LoginTest.doLogin(LoginTest.java:27)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:561)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)<br />
+              jdk.proxy2/jdk.proxy2.$Proxy10.click(Unknown Source)<br />
+              by.htp.pageobject.MailBoxPage.sendEmail(MailBoxPage.java:29)<br />
+              by.htp.mailru_outbox.LoginTest.doLogin(LoginTest.java:30)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
               java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />

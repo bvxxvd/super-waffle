@@ -38,28 +38,7 @@ public class MainPage extends BasePage {
 		super(driver);
 	}
 
-
-
-
-
-//	@FindBy(id = "mailbox__login")
-//	private WebElement loginField;
-//
-//	@FindBy(id = "mailbox__password")
-//	private WebElement passField;
-//
-//	@FindBy(id = "mailbox__auth__button")
-
-//	private WebElement submit;
-
-//	public MailBoxPage login(String login, String pass) {
-//		loginField.sendKeys(login);
-//		passField.sendKeys(pass);
-//		submit.click();
-//		return new MailBoxPage(driver);
+//	@Override
+//	public void waitForLoaded() {
 //	}
-
-	@Override
-	public void waitForLoaded() {
-	}
 }
