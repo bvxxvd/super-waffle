@@ -16,7 +16,7 @@ import by.htp.pageobject.MainPage;
 public class BaseTest {
 
 	private static final Logger LOG = Logger.getLogger(BaseTest.class);
-	private WebDriver driver;
+	protected WebDriver driver;
 
 	@BeforeClass
 	public WebDriver startBrowser() {
@@ -24,7 +24,7 @@ public class BaseTest {
 		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		LOG.warn("finish, 'startBrowser'");
 		return driver;
 	}
