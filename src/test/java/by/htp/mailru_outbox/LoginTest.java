@@ -22,7 +22,7 @@ public class LoginTest extends BaseTest {
         LOG.info("enter: daniel_defo@internet.ru  iiYiYyoPM31;");
         MailBoxPage mailBox = mainPage.login("daniel_defo@internet.ru", "iiYiYyoPM31;");
 
-        // дальше не работает
+        // дальше не работает, уже всё работает.
 
 //        driver.switchTo().defaultContent();
 
@@ -34,6 +34,8 @@ public class LoginTest extends BaseTest {
 //		String titleEmail = mailBoxCheck.waitForMyEmail(EMAIL_TEXT);
 //		assertTrue(titleEmail.contains(EMAIL_TEXT));
 //		LOG.info("check OK;");
-        closeBrowser();
+
+
+//        closeBrowser();
     }
 }
