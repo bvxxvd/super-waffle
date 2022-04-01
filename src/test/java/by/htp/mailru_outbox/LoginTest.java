@@ -26,6 +26,7 @@ public class LoginTest extends BaseTest {
 		LOG.info("enter: tathtp@mail.ru  Klopik123");
 		MailBoxPage mailBox = mainPage.login("daniel_defo@internet.ru", "iiYiYyoPM31;");
 
+
 		EmailForm email = mailBox.getEmailForm();
 		LOG.info("send Email;");
 		email.sendEmail("daniel_defo@internet.ru", "A. Shiknovich Email", EMAIL_TEXT);
