@@ -1,4 +1,4 @@
-package by.htp.pageobject;
+package Lesson14.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -29,19 +29,21 @@ public class MailBoxPage extends BasePage {
         composeLetter.click();
         toWhomField.sendKeys(toStr);
         subjectField.sendKeys(topicStr);
+        textField.click();
+        textField.sendKeys(Keys.CONTROL + "a");
+        textField.sendKeys(Keys.DELETE);
+        textField.sendKeys(Keys.ENTER);
         textField.sendKeys(textStr);
         sendButton.click();
     }
-
-
 
     public MailBoxPage(WebDriver driver) {
         super(driver);
     }
 
-    public String waitForMyEmail(String emailText) {
-        WebDriverWait wait = new WebDriverWait(driver, 1000);
-        String xpathExpression = "//div[@id='b-letters']//span[contains(text(),'" + emailText + "')]";
+    public String waitForEmail(String emailText) {
+        WebDriverWait wait = new WebDriverWait(driver, 100);
+        String xpathExpression = "//span[text()='" + emailText + "']";
         wait.until(ExpectedConditions.textToBe(By.xpath(xpathExpression), emailText));
         WebElement mail = getDriver().findElement(By.xpath(xpathExpression));
         return mail.getText();
